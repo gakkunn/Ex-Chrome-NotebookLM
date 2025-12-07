@@ -1,0 +1,226 @@
+{
+  "ext_name": {
+    "message": "NotebookLM Shortcut Effective Extension",
+    "description": "拡張機能名。ブランド名は英語のままです。"
+  },
+  "ext_description": {
+    "message": "安全な送信、Vim風スクロール、モデル切り替え、一時チャット、そしてNotebookLM向けのクリーンなUI。",
+    "description": "拡張機能の説明文です。"
+  },
+  "action_title": {
+    "message": "NotebookLM Shortcut Extension の設定",
+    "description": "ブラウザアクションやオプションページのタイトル。"
+  },
+  "button_reset": {
+    "message": "リセット",
+    "description": "デフォルトに戻すボタンのラベル。"
+  },
+  "button_resetting": {
+    "message": "リセット中...",
+    "description": "リセット処理中のボタンラベル。"
+  },
+  "section_features": {
+    "message": "機能",
+    "description": "機能トグルのセクション見出し。"
+  },
+  "section_shortcuts": {
+    "message": "ショートカット",
+    "description": "ショートカット設定セクションの見出し。"
+  },
+  "status_loading_settings": {
+    "message": "設定を読み込み中です...",
+    "description": "設定読み込み中のステータス。"
+  },
+  "status_enable_shortcuts": {
+    "message": "ショートカットを使うには機能を有効にしてください。",
+    "description": "機能がオフでショートカットが空のときの案内。"
+  },
+  "placeholder_press_keys": {
+    "message": "キーを押してください",
+    "description": "ショートカット入力欄のプレースホルダー。"
+  },
+  "error_load_settings": {
+    "message": "設定の読み込みに失敗しました。ページを再読み込みしてください。",
+    "description": "設定取得に失敗したときのエラー。"
+  },
+  "error_save_settings": {
+    "message": "設定の保存に失敗しました。もう一度お試しください。",
+    "description": "設定保存に失敗したときのエラー。"
+  },
+  "error_shortcut_conflict": {
+    "message": "\"$1\" は \"$2\" に既に割り当てられています。",
+    "description": "ショートカットが他の操作と競合したときのメッセージ。$1 は入力したキー、$2 は既存の操作名。",
+    "placeholders": {
+      "binding": {
+        "content": "$1",
+        "example": "Ctrl+J"
+      },
+      "target": {
+        "content": "$2",
+        "example": "スクロールダウン"
+      }
+    }
+  },
+  "error_shortcut_requires_modifier": {
+    "message": "「$1」は修飾キーと組み合わせてください。",
+    "description": "Shown when a disallowed single key is used without modifiers."
+  },
+  "error_shortcut_forbidden_key": {
+    "message": "「$1」はショートカットとして使用できません。",
+    "description": "Shown when a key is not allowed at all."
+  },
+  "info_shortcut_updated": {
+    "message": "\"$1\" を $2 に更新しました。",
+    "description": "ショートカットを更新できたときのメッセージ。$1 は操作名、$2 はキー。",
+    "placeholders": {
+      "action": {
+        "content": "$1",
+        "example": "上にスクロール"
+      },
+      "binding": {
+        "content": "$2",
+        "example": "Ctrl+K"
+      }
+    }
+  },
+  "info_reset_success": {
+    "message": "デフォルト設定にリセットしました。",
+    "description": "リセット完了時の通知。"
+  },
+  "toggle_vimScroll": {
+    "message": "Vim 風スクロール",
+    "description": "Vim ライクなスクロール機能のラベル。"
+  },
+  "toggle_wideScreen": {
+    "message": "ワイド表示",
+    "description": "ワイドスクリーン切替機能のラベル。"
+  },
+  "toggle_safeSend": {
+    "message": "$1 + Enter で送信",
+    "description": "Cmd/Ctrl+Enter 送信機能のラベル。"
+  },
+  "toggle_otherShortcuts": {
+    "message": "その他のショートカット",
+    "description": "その他ショートカット群のラベル。"
+  },
+  "shortcut_scrollTop": {
+    "message": "先頭にスクロール",
+    "description": "ショートカット名: 先頭へ移動。"
+  },
+  "shortcut_scrollBottom": {
+    "message": "末尾にスクロール",
+    "description": "ショートカット名: 末尾へ移動。"
+  },
+  "shortcut_scrollUp": {
+    "message": "上にスクロール",
+    "description": "ショートカット名: 上方向スクロール。"
+  },
+  "shortcut_scrollDown": {
+    "message": "下にスクロール",
+    "description": "ショートカット名: 下方向スクロール。"
+  },
+  "shortcut_scrollHalfUp": {
+    "message": "半ページ上にスクロール",
+    "description": "ショートカット名: 半ページ上。"
+  },
+  "shortcut_scrollHalfDown": {
+    "message": "半ページ下にスクロール",
+    "description": "ショートカット名: 半ページ下。"
+  },
+  "shortcut_toggleFocus": {
+    "message": "フォーカスの切り替え",
+    "description": "ショートカット名: フォーカス切替。"
+  },
+  "shortcut_toggleHeader": {
+    "message": "ヘッダーの表示切替",
+    "description": "ショートカット名: ヘッダー表示/非表示。"
+  },
+  "shortcut_addSources": {
+    "message": "ソースを追加",
+    "description": "ショートカット名: Add Sources ダイアログを開く。"
+  },
+  "shortcut_deleteChat": {
+    "message": "チャット履歴を削除",
+    "description": "ショートカット名: チャット履歴削除。"
+  },
+  "shortcut_toggleRightSidebar": {
+    "message": "右サイドバー切替 / 右タブ移動",
+    "description": "ショートカット名: 右サイドバー切替または右タブ移動。"
+  },
+  "shortcut_toggleLeftSidebar": {
+    "message": "左サイドバー切替 / 左タブ移動",
+    "description": "ショートカット名: 左サイドバー切替または左タブ移動。"
+  },
+  "modal_title_shortcuts": {
+    "message": "NotebookLM キーボードショートカット",
+    "description": "ショートカットモーダルのタイトル。"
+  },
+  "modal_section_common": {
+    "message": "共通ショートカット",
+    "description": "共通ショートカットセクション見出し。"
+  },
+  "modal_section_large": {
+    "message": "大型画面のショートカット",
+    "description": "大画面向けショートカットセクション見出し。"
+  },
+  "modal_section_small": {
+    "message": "小型画面のショートカット",
+    "description": "小画面向けショートカットセクション見出し。"
+  },
+  "modal_column_action": {
+    "message": "操作",
+    "description": "モーダルのアクション列ヘッダー。"
+  },
+  "modal_column_shortcut": {
+    "message": "ショートカット",
+    "description": "モーダルのショートカット列ヘッダー。"
+  },
+  "modal_settings_row_label": {
+    "message": "ショートカットの設定",
+    "description": "設定画面へ誘導する行のラベル。"
+  },
+  "modal_settings_row_link": {
+    "message": "こちらをクリック",
+    "description": "設定リンクのテキスト。"
+  },
+  "modal_action_keyboard_shortcuts": {
+    "message": "キーボードショートカット",
+    "description": "ヘルプ行のラベル。"
+  },
+  "modal_action_toggle_right_sidebar": {
+    "message": "右サイドバーの切り替え",
+    "description": "右サイドバーを切り替える行のラベル。"
+  },
+  "modal_action_toggle_left_sidebar": {
+    "message": "左サイドバーの切り替え",
+    "description": "左サイドバーを切り替える行のラベル。"
+  },
+  "modal_action_move_right_tab": {
+    "message": "タブを右へ移動",
+    "description": "小画面で右タブへ移動する行のラベル。"
+  },
+  "modal_action_move_left_tab": {
+    "message": "タブを左へ移動",
+    "description": "小画面で左タブへ移動する行のラベル。"
+  },
+  "modal_action_delete_chat_history": {
+    "message": "チャット履歴を削除",
+    "description": "チャット履歴削除の行ラベル。"
+  },
+  "aria_close": {
+    "message": "閉じる",
+    "description": "閉じるボタンの aria-label。"
+  },
+  "app_name_full": {
+    "message": "NotebookLM Shortcut Effective Extension",
+    "description": "拡張機能名。ブランド名は英語のままです。"
+  },
+  "app_name_short": {
+    "message": "NotebookLM Shortcut Extension",
+    "description": "Short app name shown where space is limited."
+  },
+  "app_description": {
+    "message": "安全な送信、Vim風スクロール、モデル切り替え、一時チャット、そしてNotebookLM向けのクリーンなUI。",
+    "description": "拡張機能の説明文です。"
+  }
+}

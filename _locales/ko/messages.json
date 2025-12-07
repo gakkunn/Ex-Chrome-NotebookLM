@@ -1,0 +1,226 @@
+{
+  "ext_name": {
+    "message": "NotebookLM Shortcut Effective Extension",
+    "description": "확장 프로그램 이름. 브랜드는 그대로 유지."
+  },
+  "ext_description": {
+    "message": "더 안전한 전송, Vim 스타일 스크롤, 모델 전환, 임시 채팅, 그리고 NotebookLM을 위한 깔끔한 UI.",
+    "description": "확장 프로그램 설명."
+  },
+  "action_title": {
+    "message": "NotebookLM Shortcut Extension 설정",
+    "description": "브라우저 액션 및 옵션 페이지 제목."
+  },
+  "button_reset": {
+    "message": "초기화",
+    "description": "기본값으로 되돌리는 버튼."
+  },
+  "button_resetting": {
+    "message": "초기화 중...",
+    "description": "초기화 진행 중에 표시."
+  },
+  "section_features": {
+    "message": "기능",
+    "description": "기능 토글 섹션 제목."
+  },
+  "section_shortcuts": {
+    "message": "단축키",
+    "description": "단축키 섹션 제목."
+  },
+  "status_loading_settings": {
+    "message": "설정을 불러오는 중입니다...",
+    "description": "설정 로딩 상태."
+  },
+  "status_enable_shortcuts": {
+    "message": "단축키를 사용하려면 기능을 활성화하세요.",
+    "description": "기능이 꺼져 있을 때의 안내."
+  },
+  "placeholder_press_keys": {
+    "message": "키를 누르세요",
+    "description": "단축키 입력 필드의 플레이스홀더."
+  },
+  "error_load_settings": {
+    "message": "설정을 불러오지 못했습니다. 페이지를 새로고침하세요.",
+    "description": "설정 로드 실패 시 오류."
+  },
+  "error_save_settings": {
+    "message": "설정을 저장하지 못했습니다. 다시 시도하세요.",
+    "description": "설정 저장 실패 시 오류."
+  },
+  "error_shortcut_conflict": {
+    "message": "\"$1\"은(는) \"$2\"에 이미 할당되어 있습니다.",
+    "description": "단축키가 기존 항목과 충돌할 때 메시지. $1은 입력 키, $2는 기존 작업 이름.",
+    "placeholders": {
+      "binding": {
+        "content": "$1",
+        "example": "Ctrl+J"
+      },
+      "target": {
+        "content": "$2",
+        "example": "아래로 스크롤"
+      }
+    }
+  },
+  "error_shortcut_requires_modifier": {
+    "message": "\"$1\"는 조합 키와 함께 사용해야 합니다.",
+    "description": "Shown when a disallowed single key is used without modifiers."
+  },
+  "error_shortcut_forbidden_key": {
+    "message": "\"$1\"는 바로가기 키로 사용할 수 없습니다.",
+    "description": "Shown when a key is not allowed at all."
+  },
+  "info_shortcut_updated": {
+    "message": "\"$1\"이(가) $2로 업데이트되었습니다.",
+    "description": "단축키를 성공적으로 업데이트했을 때 메시지. $1은 작업명, $2는 새 키.",
+    "placeholders": {
+      "action": {
+        "content": "$1",
+        "example": "위로 스크롤"
+      },
+      "binding": {
+        "content": "$2",
+        "example": "Ctrl+K"
+      }
+    }
+  },
+  "info_reset_success": {
+    "message": "기본 설정으로 초기화했습니다.",
+    "description": "리셋 성공 메시지."
+  },
+  "toggle_vimScroll": {
+    "message": "Vim 스타일 스크롤",
+    "description": "Vim 방식 스크롤 기능 라벨."
+  },
+  "toggle_wideScreen": {
+    "message": "와이드 화면",
+    "description": "와이드 스크린 전환 기능 라벨."
+  },
+  "toggle_safeSend": {
+    "message": "$1 + Enter로 보내기",
+    "description": "Cmd/Ctrl+Enter 전송 기능 라벨."
+  },
+  "toggle_otherShortcuts": {
+    "message": "기타 단축키",
+    "description": "기타 단축키 묶음 라벨."
+  },
+  "shortcut_scrollTop": {
+    "message": "맨 위로 스크롤",
+    "description": "단축키 이름: 맨 위로 이동."
+  },
+  "shortcut_scrollBottom": {
+    "message": "맨 아래로 스크롤",
+    "description": "단축키 이름: 맨 아래로 이동."
+  },
+  "shortcut_scrollUp": {
+    "message": "위로 스크롤",
+    "description": "단축키 이름: 위로 스크롤."
+  },
+  "shortcut_scrollDown": {
+    "message": "아래로 스크롤",
+    "description": "단축키 이름: 아래로 스크롤."
+  },
+  "shortcut_scrollHalfUp": {
+    "message": "반 페이지 위로 스크롤",
+    "description": "단축키 이름: 반 페이지 위."
+  },
+  "shortcut_scrollHalfDown": {
+    "message": "반 페이지 아래로 스크롤",
+    "description": "단축키 이름: 반 페이지 아래."
+  },
+  "shortcut_toggleFocus": {
+    "message": "포커스 전환",
+    "description": "단축키 이름: 포커스 토글."
+  },
+  "shortcut_toggleHeader": {
+    "message": "헤더 전환",
+    "description": "단축키 이름: 헤더 표시/숨기기."
+  },
+  "shortcut_addSources": {
+    "message": "소스 추가",
+    "description": "단축키 이름: 소스 추가 다이얼로그 열기."
+  },
+  "shortcut_deleteChat": {
+    "message": "채팅 기록 삭제",
+    "description": "단축키 이름: 채팅 기록 삭제."
+  },
+  "shortcut_toggleRightSidebar": {
+    "message": "오른쪽 사이드바 전환 / 오른쪽 탭 이동",
+    "description": "단축키 이름: 오른쪽 사이드바 토글 또는 오른쪽 탭 이동."
+  },
+  "shortcut_toggleLeftSidebar": {
+    "message": "왼쪽 사이드바 전환 / 왼쪽 탭 이동",
+    "description": "단축키 이름: 왼쪽 사이드바 토글 또는 왼쪽 탭 이동."
+  },
+  "modal_title_shortcuts": {
+    "message": "NotebookLM 키보드 단축키",
+    "description": "단축키 모달 제목."
+  },
+  "modal_section_common": {
+    "message": "공통 단축키",
+    "description": "공통 단축키 섹션 제목."
+  },
+  "modal_section_large": {
+    "message": "대화면 단축키",
+    "description": "대화면용 섹션 제목."
+  },
+  "modal_section_small": {
+    "message": "소화면 단축키",
+    "description": "소화면용 섹션 제목."
+  },
+  "modal_column_action": {
+    "message": "작업",
+    "description": "모달의 작업 열 헤더."
+  },
+  "modal_column_shortcut": {
+    "message": "단축키",
+    "description": "모달의 단축키 열 헤더."
+  },
+  "modal_settings_row_label": {
+    "message": "단축키 설정",
+    "description": "설정 화면으로 이동시키는 행 라벨."
+  },
+  "modal_settings_row_link": {
+    "message": "여기를 클릭",
+    "description": "설정 링크 텍스트."
+  },
+  "modal_action_keyboard_shortcuts": {
+    "message": "키보드 단축키",
+    "description": "도움말 행 라벨."
+  },
+  "modal_action_toggle_right_sidebar": {
+    "message": "오른쪽 사이드바 전환",
+    "description": "오른쪽 사이드바를 토글하는 행 라벨."
+  },
+  "modal_action_toggle_left_sidebar": {
+    "message": "왼쪽 사이드바 전환",
+    "description": "왼쪽 사이드바를 토글하는 행 라벨."
+  },
+  "modal_action_move_right_tab": {
+    "message": "오른쪽 탭으로 이동",
+    "description": "소화면에서 오른쪽 탭으로 이동하는 행 라벨."
+  },
+  "modal_action_move_left_tab": {
+    "message": "왼쪽 탭으로 이동",
+    "description": "소화면에서 왼쪽 탭으로 이동하는 행 라벨."
+  },
+  "modal_action_delete_chat_history": {
+    "message": "채팅 기록 삭제",
+    "description": "채팅 기록 삭제 행 라벨."
+  },
+  "aria_close": {
+    "message": "닫기",
+    "description": "닫기 버튼의 aria-label."
+  },
+  "app_name_full": {
+    "message": "NotebookLM Shortcut Effective Extension",
+    "description": "확장 프로그램 이름. 브랜드는 그대로 유지."
+  },
+  "app_name_short": {
+    "message": "NotebookLM Shortcut Extension",
+    "description": "Short app name shown where space is limited."
+  },
+  "app_description": {
+    "message": "더 안전한 전송, Vim 스타일 스크롤, 모델 전환, 임시 채팅, 그리고 NotebookLM을 위한 깔끔한 UI.",
+    "description": "확장 프로그램 설명."
+  }
+}

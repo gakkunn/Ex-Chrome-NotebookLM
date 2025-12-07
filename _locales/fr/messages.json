@@ -1,0 +1,226 @@
+{
+  "ext_name": {
+    "message": "NotebookLM Shortcut Effective Extension",
+    "description": "Nom de l’extension. Marque à conserver en anglais."
+  },
+  "ext_description": {
+    "message": "Envoi plus sûr, défilement façon Vim, bascule de modèle, discussions temporaires et interface épurée pour NotebookLM.",
+    "description": "Courte description de l’extension."
+  },
+  "action_title": {
+    "message": "Paramètres de NotebookLM Shortcut Extension",
+    "description": "Titre pour l’action du navigateur et la page des options."
+  },
+  "button_reset": {
+    "message": "Réinitialiser",
+    "description": "Libellé du bouton pour revenir aux valeurs par défaut."
+  },
+  "button_resetting": {
+    "message": "Réinitialisation...",
+    "description": "Texte affiché pendant la réinitialisation."
+  },
+  "section_features": {
+    "message": "Fonctionnalités",
+    "description": "Titre de la section des fonctionnalités."
+  },
+  "section_shortcuts": {
+    "message": "Raccourcis",
+    "description": "Titre de la section des raccourcis."
+  },
+  "status_loading_settings": {
+    "message": "Chargement des paramètres...",
+    "description": "Statut pendant le chargement des paramètres."
+  },
+  "status_enable_shortcuts": {
+    "message": "Activez les fonctionnalités pour utiliser les raccourcis.",
+    "description": "Message quand il n’y a pas de raccourcis car les fonctionnalités sont désactivées."
+  },
+  "placeholder_press_keys": {
+    "message": "Appuyez sur les touches",
+    "description": "Texte d’espace réservé dans le champ de raccourci."
+  },
+  "error_load_settings": {
+    "message": "Impossible de charger les paramètres. Veuillez actualiser la page.",
+    "description": "Erreur lors de l’échec du chargement des paramètres."
+  },
+  "error_save_settings": {
+    "message": "Impossible d’enregistrer les paramètres. Veuillez réessayer.",
+    "description": "Erreur lors de l’échec de l’enregistrement des paramètres."
+  },
+  "error_shortcut_conflict": {
+    "message": "« $1 » est déjà attribué à « $2 ».",
+    "description": "Affiché lorsqu’un raccourci est en conflit. $1 sont les touches, $2 est l’action existante.",
+    "placeholders": {
+      "binding": {
+        "content": "$1",
+        "example": "Ctrl+J"
+      },
+      "target": {
+        "content": "$2",
+        "example": "Défiler vers le bas"
+      }
+    }
+  },
+  "error_shortcut_requires_modifier": {
+    "message": "\"$1\" doit être combiné à une touche de modification.",
+    "description": "Shown when a disallowed single key is used without modifiers."
+  },
+  "error_shortcut_forbidden_key": {
+    "message": "\"$1\" ne peut pas être utilisé comme raccourci.",
+    "description": "Shown when a key is not allowed at all."
+  },
+  "info_shortcut_updated": {
+    "message": "« $1 » a été mis à jour en $2.",
+    "description": "Affiché après la mise à jour d’un raccourci. $1 est l’action, $2 les nouvelles touches.",
+    "placeholders": {
+      "action": {
+        "content": "$1",
+        "example": "Défiler vers le haut"
+      },
+      "binding": {
+        "content": "$2",
+        "example": "Ctrl+K"
+      }
+    }
+  },
+  "info_reset_success": {
+    "message": "Réinitialisation aux paramètres par défaut effectuée.",
+    "description": "Confirmation après réinitialisation."
+  },
+  "toggle_vimScroll": {
+    "message": "Défilement façon Vim",
+    "description": "Libellé pour la fonctionnalité de défilement façon Vim."
+  },
+  "toggle_wideScreen": {
+    "message": "Écran large",
+    "description": "Libellé pour la fonctionnalité d’écran large."
+  },
+  "toggle_safeSend": {
+    "message": "Envoyer avec $1 + Entrée",
+    "description": "Libellé pour l’envoi avec Cmd/Ctrl+Entrée."
+  },
+  "toggle_otherShortcuts": {
+    "message": "Autres raccourcis",
+    "description": "Libellé pour le groupe d’autres raccourcis."
+  },
+  "shortcut_scrollTop": {
+    "message": "Aller en haut de page",
+    "description": "Nom du raccourci : aller en haut."
+  },
+  "shortcut_scrollBottom": {
+    "message": "Aller en bas de page",
+    "description": "Nom du raccourci : aller en bas."
+  },
+  "shortcut_scrollUp": {
+    "message": "Défiler vers le haut",
+    "description": "Nom du raccourci : défiler vers le haut."
+  },
+  "shortcut_scrollDown": {
+    "message": "Défiler vers le bas",
+    "description": "Nom du raccourci : défiler vers le bas."
+  },
+  "shortcut_scrollHalfUp": {
+    "message": "Défiler d’une demi-page vers le haut",
+    "description": "Nom du raccourci : demi-page en haut."
+  },
+  "shortcut_scrollHalfDown": {
+    "message": "Défiler d’une demi-page vers le bas",
+    "description": "Nom du raccourci : demi-page en bas."
+  },
+  "shortcut_toggleFocus": {
+    "message": "Basculer le focus",
+    "description": "Nom du raccourci : changer le focus."
+  },
+  "shortcut_toggleHeader": {
+    "message": "Basculer l’en-tête",
+    "description": "Nom du raccourci : afficher/masquer l’en-tête."
+  },
+  "shortcut_addSources": {
+    "message": "Ajouter des sources",
+    "description": "Nom du raccourci : ouvrir Ajouter des sources."
+  },
+  "shortcut_deleteChat": {
+    "message": "Supprimer l’historique de chat",
+    "description": "Nom du raccourci : supprimer l’historique de chat."
+  },
+  "shortcut_toggleRightSidebar": {
+    "message": "Basculer la barre latérale droite / déplacer l’onglet à droite",
+    "description": "Nom du raccourci : barre latérale droite ou déplacement d’onglet."
+  },
+  "shortcut_toggleLeftSidebar": {
+    "message": "Basculer la barre latérale gauche / déplacer l’onglet à gauche",
+    "description": "Nom du raccourci : barre latérale gauche ou déplacement d’onglet."
+  },
+  "modal_title_shortcuts": {
+    "message": "Raccourcis clavier NotebookLM",
+    "description": "Titre de la boîte de dialogue des raccourcis."
+  },
+  "modal_section_common": {
+    "message": "Raccourcis communs",
+    "description": "En-tête de la section des raccourcis communs."
+  },
+  "modal_section_large": {
+    "message": "Raccourcis pour grand écran",
+    "description": "En-tête de la section grand écran."
+  },
+  "modal_section_small": {
+    "message": "Raccourcis pour petit écran",
+    "description": "En-tête de la section petit écran."
+  },
+  "modal_column_action": {
+    "message": "Action",
+    "description": "En-tête de colonne pour l’action."
+  },
+  "modal_column_shortcut": {
+    "message": "Raccourci",
+    "description": "En-tête de colonne pour le raccourci."
+  },
+  "modal_settings_row_label": {
+    "message": "Configurer le raccourci",
+    "description": "Ligne menant aux paramètres de l’extension."
+  },
+  "modal_settings_row_link": {
+    "message": "Cliquez ici",
+    "description": "Texte du lien vers les paramètres."
+  },
+  "modal_action_keyboard_shortcuts": {
+    "message": "Raccourcis clavier",
+    "description": "Libellé de la ligne d’aide."
+  },
+  "modal_action_toggle_right_sidebar": {
+    "message": "Basculer la barre latérale droite",
+    "description": "Libellé pour la barre latérale droite."
+  },
+  "modal_action_toggle_left_sidebar": {
+    "message": "Basculer la barre latérale gauche",
+    "description": "Libellé pour la barre latérale gauche."
+  },
+  "modal_action_move_right_tab": {
+    "message": "Déplacer l’onglet vers la droite",
+    "description": "Libellé pour déplacer l’onglet vers la droite sur petit écran."
+  },
+  "modal_action_move_left_tab": {
+    "message": "Déplacer l’onglet vers la gauche",
+    "description": "Libellé pour déplacer l’onglet vers la gauche sur petit écran."
+  },
+  "modal_action_delete_chat_history": {
+    "message": "Supprimer l’historique de chat",
+    "description": "Libellé pour supprimer l’historique de chat."
+  },
+  "aria_close": {
+    "message": "Fermer",
+    "description": "aria-label du bouton de fermeture."
+  },
+  "app_name_full": {
+    "message": "NotebookLM Shortcut Effective Extension",
+    "description": "Nom de l’extension. Marque à conserver en anglais."
+  },
+  "app_name_short": {
+    "message": "NotebookLM Shortcut Extension",
+    "description": "Short app name shown where space is limited."
+  },
+  "app_description": {
+    "message": "Envoi plus sûr, défilement façon Vim, bascule de modèle, discussions temporaires et interface épurée pour NotebookLM.",
+    "description": "Courte description de l’extension."
+  }
+}

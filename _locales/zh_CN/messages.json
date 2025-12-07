@@ -1,0 +1,226 @@
+{
+  "ext_name": {
+    "message": "NotebookLM Shortcut Effective Extension",
+    "description": "扩展名称，保持品牌英文。"
+  },
+  "ext_description": {
+    "message": "更安全的发送、类 Vim 的滚动、模型切换、临时聊天，以及面向 NotebookLM 的简洁界面。",
+    "description": "扩展的简短描述。"
+  },
+  "action_title": {
+    "message": "NotebookLM Shortcut Extension 设置",
+    "description": "浏览器操作和选项页标题。"
+  },
+  "button_reset": {
+    "message": "重置",
+    "description": "恢复默认值的按钮标签。"
+  },
+  "button_resetting": {
+    "message": "正在重置...",
+    "description": "重置过程中显示的文本。"
+  },
+  "section_features": {
+    "message": "功能",
+    "description": "功能开关区域标题。"
+  },
+  "section_shortcuts": {
+    "message": "快捷键",
+    "description": "快捷键区域标题。"
+  },
+  "status_loading_settings": {
+    "message": "正在加载设置...",
+    "description": "加载设置时的状态文本。"
+  },
+  "status_enable_shortcuts": {
+    "message": "启用相关功能后即可使用快捷键。",
+    "description": "功能关闭导致没有快捷键时的提示。"
+  },
+  "placeholder_press_keys": {
+    "message": "请按键",
+    "description": "快捷键输入框的占位符。"
+  },
+  "error_load_settings": {
+    "message": "设置加载失败。请刷新页面。",
+    "description": "无法加载设置时的错误提示。"
+  },
+  "error_save_settings": {
+    "message": "设置保存失败。请重试。",
+    "description": "无法保存设置时的错误提示。"
+  },
+  "error_shortcut_conflict": {
+    "message": "“$1”已分配给“$2”。",
+    "description": "快捷键与现有项冲突时的提示。$1 是输入的键，$2 是已有的操作名称。",
+    "placeholders": {
+      "binding": {
+        "content": "$1",
+        "example": "Ctrl+J"
+      },
+      "target": {
+        "content": "$2",
+        "example": "向下滚动"
+      }
+    }
+  },
+  "error_shortcut_requires_modifier": {
+    "message": "“$1” 必须与修饰键组合使用。",
+    "description": "Shown when a disallowed single key is used without modifiers."
+  },
+  "error_shortcut_forbidden_key": {
+    "message": "“$1” 不能用作快捷键。",
+    "description": "Shown when a key is not allowed at all."
+  },
+  "info_shortcut_updated": {
+    "message": "“$1”已更新为 $2。",
+    "description": "成功更新快捷键时的提示。$1 是操作名，$2 是新的按键。",
+    "placeholders": {
+      "action": {
+        "content": "$1",
+        "example": "向上滚动"
+      },
+      "binding": {
+        "content": "$2",
+        "example": "Ctrl+K"
+      }
+    }
+  },
+  "info_reset_success": {
+    "message": "已重置为默认设置。",
+    "description": "重置完成后的提示。"
+  },
+  "toggle_vimScroll": {
+    "message": "Vim 风格滚动",
+    "description": "Vim 风格滚动功能标签。"
+  },
+  "toggle_wideScreen": {
+    "message": "宽屏模式",
+    "description": "宽屏显示功能标签。"
+  },
+  "toggle_safeSend": {
+    "message": "$1 + Enter 发送",
+    "description": "Cmd/Ctrl+Enter 发送功能标签。"
+  },
+  "toggle_otherShortcuts": {
+    "message": "其他快捷键",
+    "description": "其他快捷键组标签。"
+  },
+  "shortcut_scrollTop": {
+    "message": "滚动到顶部",
+    "description": "快捷键名：滚动到顶部。"
+  },
+  "shortcut_scrollBottom": {
+    "message": "滚动到底部",
+    "description": "快捷键名：滚动到底部。"
+  },
+  "shortcut_scrollUp": {
+    "message": "向上滚动",
+    "description": "快捷键名：向上滚动。"
+  },
+  "shortcut_scrollDown": {
+    "message": "向下滚动",
+    "description": "快捷键名：向下滚动。"
+  },
+  "shortcut_scrollHalfUp": {
+    "message": "向上滚动半页",
+    "description": "快捷键名：半页上滚。"
+  },
+  "shortcut_scrollHalfDown": {
+    "message": "向下滚动半页",
+    "description": "快捷键名：半页下滚。"
+  },
+  "shortcut_toggleFocus": {
+    "message": "切换焦点",
+    "description": "快捷键名：切换焦点。"
+  },
+  "shortcut_toggleHeader": {
+    "message": "切换页眉显示",
+    "description": "快捷键名：显示/隐藏页眉。"
+  },
+  "shortcut_addSources": {
+    "message": "添加来源",
+    "description": "快捷键名：打开添加来源对话框。"
+  },
+  "shortcut_deleteChat": {
+    "message": "删除聊天记录",
+    "description": "快捷键名：删除聊天记录。"
+  },
+  "shortcut_toggleRightSidebar": {
+    "message": "切换右侧边栏 / 移动到右侧标签",
+    "description": "快捷键名：右侧边栏切换或移到右侧标签。"
+  },
+  "shortcut_toggleLeftSidebar": {
+    "message": "切换左侧边栏 / 移动到左侧标签",
+    "description": "快捷键名：左侧边栏切换或移到左侧标签。"
+  },
+  "modal_title_shortcuts": {
+    "message": "NotebookLM 键盘快捷键",
+    "description": "快捷键弹窗标题。"
+  },
+  "modal_section_common": {
+    "message": "常用快捷键",
+    "description": "通用快捷键分区标题。"
+  },
+  "modal_section_large": {
+    "message": "大屏快捷键",
+    "description": "大屏分区标题。"
+  },
+  "modal_section_small": {
+    "message": "小屏快捷键",
+    "description": "小屏分区标题。"
+  },
+  "modal_column_action": {
+    "message": "操作",
+    "description": "表格操作列标题。"
+  },
+  "modal_column_shortcut": {
+    "message": "快捷键",
+    "description": "表格快捷键列标题。"
+  },
+  "modal_settings_row_label": {
+    "message": "设置快捷键",
+    "description": "跳转到扩展设置的行标签。"
+  },
+  "modal_settings_row_link": {
+    "message": "点击此处",
+    "description": "设置链接文本。"
+  },
+  "modal_action_keyboard_shortcuts": {
+    "message": "键盘快捷键",
+    "description": "帮助行标签。"
+  },
+  "modal_action_toggle_right_sidebar": {
+    "message": "切换右侧边栏",
+    "description": "切换右侧边栏的行标签。"
+  },
+  "modal_action_toggle_left_sidebar": {
+    "message": "切换左侧边栏",
+    "description": "切换左侧边栏的行标签。"
+  },
+  "modal_action_move_right_tab": {
+    "message": "移动到右侧标签",
+    "description": "小屏幕右移标签的行标签。"
+  },
+  "modal_action_move_left_tab": {
+    "message": "移动到左侧标签",
+    "description": "小屏幕左移标签的行标签。"
+  },
+  "modal_action_delete_chat_history": {
+    "message": "删除聊天记录",
+    "description": "删除聊天记录的行标签。"
+  },
+  "aria_close": {
+    "message": "关闭",
+    "description": "关闭按钮的 aria-label。"
+  },
+  "app_name_full": {
+    "message": "NotebookLM Shortcut Effective Extension",
+    "description": "扩展名称，保持品牌英文。"
+  },
+  "app_name_short": {
+    "message": "NotebookLM Shortcut Extension",
+    "description": "Short app name shown where space is limited."
+  },
+  "app_description": {
+    "message": "更安全的发送、类 Vim 的滚动、模型切换、临时聊天，以及面向 NotebookLM 的简洁界面。",
+    "description": "扩展的简短描述。"
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "ext_name": {
+    "message": "NotebookLM Shortcut Effective Extension",
+    "description": "Nome da extensão. Manter a marca em inglês."
+  },
+  "ext_description": {
+    "message": "Envio mais seguro, rolagem ao estilo Vim, alternância de modelo, chats temporários e interface limpa para o NotebookLM.",
+    "description": "Descrição curta da extensão."
+  },
+  "action_title": {
+    "message": "Configurações do NotebookLM Shortcut Extension",
+    "description": "Título da ação do navegador e da página de opções."
+  },
+  "button_reset": {
+    "message": "Redefinir",
+    "description": "Rótulo do botão para voltar ao padrão."
+  },
+  "button_resetting": {
+    "message": "Redefinindo...",
+    "description": "Texto mostrado durante a redefinição."
+  },
+  "section_features": {
+    "message": "Recursos",
+    "description": "Título da seção de recursos."
+  },
+  "section_shortcuts": {
+    "message": "Atalhos",
+    "description": "Título da seção de atalhos."
+  },
+  "status_loading_settings": {
+    "message": "Carregando configurações...",
+    "description": "Estado ao carregar as configurações."
+  },
+  "status_enable_shortcuts": {
+    "message": "Ative os recursos para usar os atalhos.",
+    "description": "Mensagem quando não há atalhos porque os recursos estão desligados."
+  },
+  "placeholder_press_keys": {
+    "message": "Pressione as teclas",
+    "description": "Texto de espaço reservado no campo de atalho."
+  },
+  "error_load_settings": {
+    "message": "Não foi possível carregar as configurações. Recarregue a página.",
+    "description": "Erro ao não conseguir carregar as configurações."
+  },
+  "error_save_settings": {
+    "message": "Não foi possível salvar as configurações. Tente novamente.",
+    "description": "Erro ao não conseguir salvar as configurações."
+  },
+  "error_shortcut_conflict": {
+    "message": "\"$1\" já está atribuído a \"$2\".",
+    "description": "Mostrado quando um atalho entra em conflito. $1 são as teclas, $2 é a ação existente.",
+    "placeholders": {
+      "binding": {
+        "content": "$1",
+        "example": "Ctrl+J"
+      },
+      "target": {
+        "content": "$2",
+        "example": "Rolar para baixo"
+      }
+    }
+  },
+  "error_shortcut_requires_modifier": {
+    "message": "\"$1\" deve ser combinado a uma tecla modificadora.",
+    "description": "Shown when a disallowed single key is used without modifiers."
+  },
+  "error_shortcut_forbidden_key": {
+    "message": "\"$1\" não pode ser usado como atalho.",
+    "description": "Shown when a key is not allowed at all."
+  },
+  "info_shortcut_updated": {
+    "message": "\"$1\" foi atualizado para $2.",
+    "description": "Mostrado após atualizar um atalho. $1 é a ação, $2 são as novas teclas.",
+    "placeholders": {
+      "action": {
+        "content": "$1",
+        "example": "Rolar para cima"
+      },
+      "binding": {
+        "content": "$2",
+        "example": "Ctrl+K"
+      }
+    }
+  },
+  "info_reset_success": {
+    "message": "As configurações foram redefinidas para o padrão.",
+    "description": "Confirmação após redefinir."
+  },
+  "toggle_vimScroll": {
+    "message": "Rolagem estilo Vim",
+    "description": "Rótulo do recurso de rolagem tipo Vim."
+  },
+  "toggle_wideScreen": {
+    "message": "Tela ampla",
+    "description": "Rótulo do recurso de tela ampla."
+  },
+  "toggle_safeSend": {
+    "message": "Enviar com $1 + Enter",
+    "description": "Rótulo do recurso de envio com Cmd/Ctrl+Enter."
+  },
+  "toggle_otherShortcuts": {
+    "message": "Outros atalhos",
+    "description": "Rótulo do grupo de outros atalhos."
+  },
+  "shortcut_scrollTop": {
+    "message": "Rolar para o topo",
+    "description": "Nome do atalho: ir para o topo."
+  },
+  "shortcut_scrollBottom": {
+    "message": "Rolar para o fim",
+    "description": "Nome do atalho: ir para o fim."
+  },
+  "shortcut_scrollUp": {
+    "message": "Rolar para cima",
+    "description": "Nome do atalho: rolar para cima."
+  },
+  "shortcut_scrollDown": {
+    "message": "Rolar para baixo",
+    "description": "Nome do atalho: rolar para baixo."
+  },
+  "shortcut_scrollHalfUp": {
+    "message": "Rolar meia página para cima",
+    "description": "Nome do atalho: meia página acima."
+  },
+  "shortcut_scrollHalfDown": {
+    "message": "Rolar meia página para baixo",
+    "description": "Nome do atalho: meia página abaixo."
+  },
+  "shortcut_toggleFocus": {
+    "message": "Alternar foco",
+    "description": "Nome do atalho: alternar foco."
+  },
+  "shortcut_toggleHeader": {
+    "message": "Alternar cabeçalho",
+    "description": "Nome do atalho: mostrar/ocultar cabeçalho."
+  },
+  "shortcut_addSources": {
+    "message": "Adicionar fontes",
+    "description": "Nome do atalho: abrir adicionar fontes."
+  },
+  "shortcut_deleteChat": {
+    "message": "Excluir histórico do chat",
+    "description": "Nome do atalho: excluir histórico de chat."
+  },
+  "shortcut_toggleRightSidebar": {
+    "message": "Alternar barra lateral direita / mover aba para a direita",
+    "description": "Nome do atalho: barra lateral direita ou mover aba."
+  },
+  "shortcut_toggleLeftSidebar": {
+    "message": "Alternar barra lateral esquerda / mover aba para a esquerda",
+    "description": "Nome do atalho: barra lateral esquerda ou mover aba."
+  },
+  "modal_title_shortcuts": {
+    "message": "Atalhos de teclado do NotebookLM",
+    "description": "Título do modal de atalhos."
+  },
+  "modal_section_common": {
+    "message": "Atalhos comuns",
+    "description": "Título da seção de atalhos comuns."
+  },
+  "modal_section_large": {
+    "message": "Atalhos para telas grandes",
+    "description": "Título da seção para telas grandes."
+  },
+  "modal_section_small": {
+    "message": "Atalhos para telas pequenas",
+    "description": "Título da seção para telas pequenas."
+  },
+  "modal_column_action": {
+    "message": "Ação",
+    "description": "Cabeçalho da coluna de ações."
+  },
+  "modal_column_shortcut": {
+    "message": "Atalho",
+    "description": "Cabeçalho da coluna de atalhos."
+  },
+  "modal_settings_row_label": {
+    "message": "Configurar atalho",
+    "description": "Linha que leva às configurações da extensão."
+  },
+  "modal_settings_row_link": {
+    "message": "Clique aqui",
+    "description": "Texto do link para as configurações."
+  },
+  "modal_action_keyboard_shortcuts": {
+    "message": "Atalhos de teclado",
+    "description": "Rótulo da linha de ajuda."
+  },
+  "modal_action_toggle_right_sidebar": {
+    "message": "Alternar barra lateral direita",
+    "description": "Rótulo para alternar a barra lateral direita."
+  },
+  "modal_action_toggle_left_sidebar": {
+    "message": "Alternar barra lateral esquerda",
+    "description": "Rótulo para alternar a barra lateral esquerda."
+  },
+  "modal_action_move_right_tab": {
+    "message": "Mover aba para a direita",
+    "description": "Rótulo para mover a aba para a direita em telas pequenas."
+  },
+  "modal_action_move_left_tab": {
+    "message": "Mover aba para a esquerda",
+    "description": "Rótulo para mover a aba para a esquerda em telas pequenas."
+  },
+  "modal_action_delete_chat_history": {
+    "message": "Excluir histórico do chat",
+    "description": "Rótulo para excluir o histórico do chat."
+  },
+  "aria_close": {
+    "message": "Fechar",
+    "description": "aria-label do botão de fechar."
+  },
+  "app_name_full": {
+    "message": "NotebookLM Shortcut Effective Extension",
+    "description": "Nome da extensão. Manter a marca em inglês."
+  },
+  "app_name_short": {
+    "message": "NotebookLM Shortcut Extension",
+    "description": "Short app name shown where space is limited."
+  },
+  "app_description": {
+    "message": "Envio mais seguro, rolagem ao estilo Vim, alternância de modelo, chats temporários e interface limpa para o NotebookLM.",
+    "description": "Descrição curta da extensão."
+  }
+}

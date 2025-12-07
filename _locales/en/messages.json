@@ -1,0 +1,226 @@
+{
+  "ext_name": {
+    "message": "NotebookLM Shortcut Effective Extension",
+    "description": "Extension name shown in the Chrome Web Store and toolbar. Keep brand as-is."
+  },
+  "ext_description": {
+    "message": "Safer send, vim-like scroll, model toggles, temporary chats, and clean UI for NotebookLM.",
+    "description": "Short summary of what the extension does."
+  },
+  "action_title": {
+    "message": "NotebookLM Shortcut Extension Settings",
+    "description": "Tooltip/title for the browser action and options page."
+  },
+  "button_reset": {
+    "message": "Reset",
+    "description": "Button label to reset settings to defaults."
+  },
+  "button_resetting": {
+    "message": "Resetting...",
+    "description": "Shown on the reset button while reset is in progress."
+  },
+  "section_features": {
+    "message": "Features",
+    "description": "Heading label for the features toggle section."
+  },
+  "section_shortcuts": {
+    "message": "Shortcuts",
+    "description": "Heading label for the shortcuts section."
+  },
+  "status_loading_settings": {
+    "message": "Loading settings...",
+    "description": "Status text shown while settings are being loaded."
+  },
+  "status_enable_shortcuts": {
+    "message": "Enable features to use shortcuts.",
+    "description": "Empty state message shown when no shortcuts are available because toggles are off."
+  },
+  "placeholder_press_keys": {
+    "message": "Press keys",
+    "description": "Placeholder text in the shortcut input field."
+  },
+  "error_load_settings": {
+    "message": "Failed to load settings. Please reload the page.",
+    "description": "Error message shown when settings could not be loaded from storage."
+  },
+  "error_save_settings": {
+    "message": "Failed to save settings. Please try again.",
+    "description": "Error message shown when settings could not be saved."
+  },
+  "error_shortcut_conflict": {
+    "message": "\"$1\" is already assigned to \"$2\".",
+    "description": "Shown when a shortcut conflicts with an existing assignment. $1 is the pressed keys, $2 is the existing action label.",
+    "placeholders": {
+      "binding": {
+        "content": "$1",
+        "example": "Ctrl+J"
+      },
+      "target": {
+        "content": "$2",
+        "example": "Scroll Down"
+      }
+    }
+  },
+  "error_shortcut_requires_modifier": {
+    "message": "\"$1\" must be combined with a modifier key.",
+    "description": "Shown when a disallowed single key is used without modifiers."
+  },
+  "error_shortcut_forbidden_key": {
+    "message": "\"$1\" cannot be used as a shortcut.",
+    "description": "Shown when a key is not allowed at all."
+  },
+  "info_shortcut_updated": {
+    "message": "\"$1\" was updated to $2.",
+    "description": "Shown after a shortcut is successfully updated. $1 is the action label, $2 is the new keys.",
+    "placeholders": {
+      "action": {
+        "content": "$1",
+        "example": "Scroll Up"
+      },
+      "binding": {
+        "content": "$2",
+        "example": "Ctrl+K"
+      }
+    }
+  },
+  "info_reset_success": {
+    "message": "Reset to default settings.",
+    "description": "Confirmation message shown after settings are reset."
+  },
+  "toggle_vimScroll": {
+    "message": "Vim-like Scroll",
+    "description": "Feature toggle label for Vim-style scrolling."
+  },
+  "toggle_wideScreen": {
+    "message": "Wide Screen",
+    "description": "Feature toggle label for wide screen layout controls."
+  },
+  "toggle_safeSend": {
+    "message": "Send with $1 + Enter",
+    "description": "Feature toggle label for sending messages with Cmd/Ctrl + Enter."
+  },
+  "toggle_otherShortcuts": {
+    "message": "Other Shortcuts",
+    "description": "Feature toggle label for additional shortcuts."
+  },
+  "shortcut_scrollTop": {
+    "message": "Scroll to Top",
+    "description": "Shortcut label: jump to top."
+  },
+  "shortcut_scrollBottom": {
+    "message": "Scroll to Bottom",
+    "description": "Shortcut label: jump to bottom."
+  },
+  "shortcut_scrollUp": {
+    "message": "Scroll Up",
+    "description": "Shortcut label: scroll up."
+  },
+  "shortcut_scrollDown": {
+    "message": "Scroll Down",
+    "description": "Shortcut label: scroll down."
+  },
+  "shortcut_scrollHalfUp": {
+    "message": "Scroll Half Page Up",
+    "description": "Shortcut label: scroll half page up."
+  },
+  "shortcut_scrollHalfDown": {
+    "message": "Scroll Half Page Down",
+    "description": "Shortcut label: scroll half page down."
+  },
+  "shortcut_toggleFocus": {
+    "message": "Toggle Focus",
+    "description": "Shortcut label: toggle omnibar focus/visibility."
+  },
+  "shortcut_toggleHeader": {
+    "message": "Toggle Header",
+    "description": "Shortcut label: show/hide header."
+  },
+  "shortcut_addSources": {
+    "message": "Add Sources",
+    "description": "Shortcut label: open add sources dialog."
+  },
+  "shortcut_deleteChat": {
+    "message": "Delete chat history",
+    "description": "Shortcut label: delete chat history."
+  },
+  "shortcut_toggleRightSidebar": {
+    "message": "Toggle Right Side Bar / Move Right Tab",
+    "description": "Shortcut label for right sidebar or moving to right tab."
+  },
+  "shortcut_toggleLeftSidebar": {
+    "message": "Toggle Left Side Bar / Move Left Tab",
+    "description": "Shortcut label for left sidebar or moving to left tab."
+  },
+  "modal_title_shortcuts": {
+    "message": "NotebookLM Keyboard Shortcuts",
+    "description": "Title for the shortcuts modal dialog."
+  },
+  "modal_section_common": {
+    "message": "Common Shortcuts",
+    "description": "Section title for shortcuts available on all layouts."
+  },
+  "modal_section_large": {
+    "message": "Large Screen Shortcuts",
+    "description": "Section title for shortcuts on large screens."
+  },
+  "modal_section_small": {
+    "message": "Small Screen Shortcuts",
+    "description": "Section title for shortcuts on small screens."
+  },
+  "modal_column_action": {
+    "message": "Action",
+    "description": "Column header label for the action name."
+  },
+  "modal_column_shortcut": {
+    "message": "Shortcut",
+    "description": "Column header label for the shortcut keys."
+  },
+  "modal_settings_row_label": {
+    "message": "Setting Shortcut Key",
+    "description": "Row label that links to the extension settings."
+  },
+  "modal_settings_row_link": {
+    "message": "Click Here",
+    "description": "Link text to open the extension settings."
+  },
+  "modal_action_keyboard_shortcuts": {
+    "message": "Keyboard shortcuts",
+    "description": "Row label describing the shortcut help action."
+  },
+  "modal_action_toggle_right_sidebar": {
+    "message": "Toggle Right Side Bar",
+    "description": "Row label for toggling the right sidebar."
+  },
+  "modal_action_toggle_left_sidebar": {
+    "message": "Toggle Left Side Bar",
+    "description": "Row label for toggling the left sidebar."
+  },
+  "modal_action_move_right_tab": {
+    "message": "Move Right Tab",
+    "description": "Row label for moving to the right tab (small screens)."
+  },
+  "modal_action_move_left_tab": {
+    "message": "Move Left Tab",
+    "description": "Row label for moving to the left tab (small screens)."
+  },
+  "modal_action_delete_chat_history": {
+    "message": "Delete chat history",
+    "description": "Row label for deleting chat history."
+  },
+  "aria_close": {
+    "message": "Close",
+    "description": "Accessible label for close buttons."
+  },
+  "app_name_full": {
+    "message": "NotebookLM Shortcut Effective Extension",
+    "description": "Extension name shown in the Chrome Web Store and toolbar. Keep brand as-is."
+  },
+  "app_name_short": {
+    "message": "NotebookLM Shortcut Extension",
+    "description": "Short app name shown where space is limited."
+  },
+  "app_description": {
+    "message": "Safer send, vim-like scroll, model toggles, temporary chats, and clean UI for NotebookLM.",
+    "description": "Short summary of what the extension does."
+  }
+}

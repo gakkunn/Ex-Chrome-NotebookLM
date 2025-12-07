@@ -1,0 +1,226 @@
+{
+  "ext_name": {
+    "message": "NotebookLM Shortcut Effective Extension",
+    "description": "擴充功能名稱，品牌保持英文。"
+  },
+  "ext_description": {
+    "message": "更安全的傳送、類 Vim 的捲動、模型切換、暫時聊天，以及適用於 NotebookLM 的簡潔介面。",
+    "description": "擴充的簡短描述。"
+  },
+  "action_title": {
+    "message": "NotebookLM Shortcut Extension 設定",
+    "description": "瀏覽器按鈕與選項頁的標題。"
+  },
+  "button_reset": {
+    "message": "重設",
+    "description": "恢復預設的按鈕標籤。"
+  },
+  "button_resetting": {
+    "message": "重設中...",
+    "description": "重設處理中的顯示。"
+  },
+  "section_features": {
+    "message": "功能",
+    "description": "功能切換區塊的標題。"
+  },
+  "section_shortcuts": {
+    "message": "快捷鍵",
+    "description": "快捷鍵區塊的標題。"
+  },
+  "status_loading_settings": {
+    "message": "正在載入設定...",
+    "description": "載入設定時的狀態文字。"
+  },
+  "status_enable_shortcuts": {
+    "message": "啟用功能後即可使用快捷鍵。",
+    "description": "功能關閉導致沒有快捷鍵時的提示。"
+  },
+  "placeholder_press_keys": {
+    "message": "請按下按鍵",
+    "description": "快捷鍵輸入欄的預設文字。"
+  },
+  "error_load_settings": {
+    "message": "載入設定失敗。請重新整理頁面。",
+    "description": "無法載入設定時的錯誤。"
+  },
+  "error_save_settings": {
+    "message": "儲存設定失敗。請再試一次。",
+    "description": "無法儲存設定時的錯誤。"
+  },
+  "error_shortcut_conflict": {
+    "message": "「$1」已指派給「$2」。",
+    "description": "快捷鍵與現有項目衝突時的提示。$1 為輸入的鍵，$2 為既有的操作名稱。",
+    "placeholders": {
+      "binding": {
+        "content": "$1",
+        "example": "Ctrl+J"
+      },
+      "target": {
+        "content": "$2",
+        "example": "向下捲動"
+      }
+    }
+  },
+  "error_shortcut_requires_modifier": {
+    "message": "「$1」必須與修飾鍵一起使用。",
+    "description": "Shown when a disallowed single key is used without modifiers."
+  },
+  "error_shortcut_forbidden_key": {
+    "message": "「$1」無法作為快捷鍵使用。",
+    "description": "Shown when a key is not allowed at all."
+  },
+  "info_shortcut_updated": {
+    "message": "已將「$1」更新為 $2。",
+    "description": "成功更新快捷鍵時的提示。$1 為操作名，$2 為新按鍵。",
+    "placeholders": {
+      "action": {
+        "content": "$1",
+        "example": "向上捲動"
+      },
+      "binding": {
+        "content": "$2",
+        "example": "Ctrl+K"
+      }
+    }
+  },
+  "info_reset_success": {
+    "message": "已重設為預設設定。",
+    "description": "重設完成後的提示。"
+  },
+  "toggle_vimScroll": {
+    "message": "Vim 風格捲動",
+    "description": "Vim 風格捲動功能標籤。"
+  },
+  "toggle_wideScreen": {
+    "message": "寬螢幕模式",
+    "description": "寬螢幕顯示功能標籤。"
+  },
+  "toggle_safeSend": {
+    "message": "$1 + Enter 傳送",
+    "description": "Cmd/Ctrl+Enter 傳送功能標籤。"
+  },
+  "toggle_otherShortcuts": {
+    "message": "其他快捷鍵",
+    "description": "其他快捷鍵群組標籤。"
+  },
+  "shortcut_scrollTop": {
+    "message": "捲動到頂端",
+    "description": "快捷鍵名稱：捲動到頂端。"
+  },
+  "shortcut_scrollBottom": {
+    "message": "捲動到底部",
+    "description": "快捷鍵名稱：捲動到底部。"
+  },
+  "shortcut_scrollUp": {
+    "message": "向上捲動",
+    "description": "快捷鍵名稱：向上捲動。"
+  },
+  "shortcut_scrollDown": {
+    "message": "向下捲動",
+    "description": "快捷鍵名稱：向下捲動。"
+  },
+  "shortcut_scrollHalfUp": {
+    "message": "向上捲動半頁",
+    "description": "快捷鍵名稱：半頁上捲。"
+  },
+  "shortcut_scrollHalfDown": {
+    "message": "向下捲動半頁",
+    "description": "快捷鍵名稱：半頁下捲。"
+  },
+  "shortcut_toggleFocus": {
+    "message": "切換焦點",
+    "description": "快捷鍵名稱：切換焦點。"
+  },
+  "shortcut_toggleHeader": {
+    "message": "切換頁首顯示",
+    "description": "快捷鍵名稱：頁首顯示/隱藏。"
+  },
+  "shortcut_addSources": {
+    "message": "新增來源",
+    "description": "快捷鍵名稱：開啟新增來源對話框。"
+  },
+  "shortcut_deleteChat": {
+    "message": "刪除聊天記錄",
+    "description": "快捷鍵名稱：刪除聊天記錄。"
+  },
+  "shortcut_toggleRightSidebar": {
+    "message": "切換右側邊欄 / 移動到右側分頁",
+    "description": "快捷鍵名稱：右側邊欄切換或右側分頁移動。"
+  },
+  "shortcut_toggleLeftSidebar": {
+    "message": "切換左側邊欄 / 移動到左側分頁",
+    "description": "快捷鍵名稱：左側邊欄切換或左側分頁移動。"
+  },
+  "modal_title_shortcuts": {
+    "message": "NotebookLM 鍵盤快捷鍵",
+    "description": "快捷鍵彈窗標題。"
+  },
+  "modal_section_common": {
+    "message": "通用快捷鍵",
+    "description": "通用快捷鍵區段標題。"
+  },
+  "modal_section_large": {
+    "message": "大螢幕快捷鍵",
+    "description": "大螢幕區段標題。"
+  },
+  "modal_section_small": {
+    "message": "小螢幕快捷鍵",
+    "description": "小螢幕區段標題。"
+  },
+  "modal_column_action": {
+    "message": "操作",
+    "description": "表格操作欄標題。"
+  },
+  "modal_column_shortcut": {
+    "message": "快捷鍵",
+    "description": "表格快捷鍵欄標題。"
+  },
+  "modal_settings_row_label": {
+    "message": "設定快捷鍵",
+    "description": "導向擴充設定的行標籤。"
+  },
+  "modal_settings_row_link": {
+    "message": "按此",
+    "description": "設定連結文字。"
+  },
+  "modal_action_keyboard_shortcuts": {
+    "message": "鍵盤快捷鍵",
+    "description": "說明行標籤。"
+  },
+  "modal_action_toggle_right_sidebar": {
+    "message": "切換右側邊欄",
+    "description": "切換右側邊欄的行標籤。"
+  },
+  "modal_action_toggle_left_sidebar": {
+    "message": "切換左側邊欄",
+    "description": "切換左側邊欄的行標籤。"
+  },
+  "modal_action_move_right_tab": {
+    "message": "移到右側分頁",
+    "description": "小螢幕右移分頁的行標籤。"
+  },
+  "modal_action_move_left_tab": {
+    "message": "移到左側分頁",
+    "description": "小螢幕左移分頁的行標籤。"
+  },
+  "modal_action_delete_chat_history": {
+    "message": "刪除聊天記錄",
+    "description": "刪除聊天記錄的行標籤。"
+  },
+  "aria_close": {
+    "message": "關閉",
+    "description": "關閉按鈕的 aria-label。"
+  },
+  "app_name_full": {
+    "message": "NotebookLM Shortcut Effective Extension",
+    "description": "擴充功能名稱，品牌保持英文。"
+  },
+  "app_name_short": {
+    "message": "NotebookLM Shortcut Extension",
+    "description": "Short app name shown where space is limited."
+  },
+  "app_description": {
+    "message": "更安全的傳送、類 Vim 的捲動、模型切換、暫時聊天，以及適用於 NotebookLM 的簡潔介面。",
+    "description": "擴充的簡短描述。"
+  }
+}

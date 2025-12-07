@@ -1,0 +1,226 @@
+{
+  "ext_name": {
+    "message": "NotebookLM Shortcut Effective Extension",
+    "description": "Name der Erweiterung. Marke bleibt Englisch."
+  },
+  "ext_description": {
+    "message": "Sichereres Senden, Vim-ähnliches Scrollen, Modellumschaltung, temporäre Chats und eine aufgeräumte Oberfläche für NotebookLM.",
+    "description": "Kurze Beschreibung der Erweiterung."
+  },
+  "action_title": {
+    "message": "NotebookLM Shortcut Extension – Einstellungen",
+    "description": "Titel für Browser-Aktion und Optionsseite."
+  },
+  "button_reset": {
+    "message": "Zurücksetzen",
+    "description": "Button-Beschriftung für das Zurücksetzen."
+  },
+  "button_resetting": {
+    "message": "Wird zurückgesetzt...",
+    "description": "Text während des Zurücksetzens."
+  },
+  "section_features": {
+    "message": "Funktionen",
+    "description": "Überschrift des Funktionsbereichs."
+  },
+  "section_shortcuts": {
+    "message": "Shortcuts",
+    "description": "Überschrift des Shortcut-Bereichs."
+  },
+  "status_loading_settings": {
+    "message": "Einstellungen werden geladen...",
+    "description": "Status beim Laden der Einstellungen."
+  },
+  "status_enable_shortcuts": {
+    "message": "Aktivieren Sie Funktionen, um Shortcuts zu nutzen.",
+    "description": "Hinweis, wenn keine Shortcuts verfügbar sind, weil Funktionen aus sind."
+  },
+  "placeholder_press_keys": {
+    "message": "Tasten drücken",
+    "description": "Platzhalter im Shortcut-Eingabefeld."
+  },
+  "error_load_settings": {
+    "message": "Einstellungen konnten nicht geladen werden. Bitte Seite neu laden.",
+    "description": "Fehler, wenn das Laden der Einstellungen scheitert."
+  },
+  "error_save_settings": {
+    "message": "Einstellungen konnten nicht gespeichert werden. Bitte erneut versuchen.",
+    "description": "Fehler, wenn das Speichern scheitert."
+  },
+  "error_shortcut_conflict": {
+    "message": "„$1“ ist bereits „$2“ zugewiesen.",
+    "description": "Wird angezeigt, wenn ein Shortcut mit einem bestehenden kollidiert. $1 sind die Tasten, $2 ist die bestehende Aktion.",
+    "placeholders": {
+      "binding": {
+        "content": "$1",
+        "example": "Ctrl+J"
+      },
+      "target": {
+        "content": "$2",
+        "example": "Nach unten scrollen"
+      }
+    }
+  },
+  "error_shortcut_requires_modifier": {
+    "message": "\"$1\" muss mit einer Modifikatortaste kombiniert werden.",
+    "description": "Shown when a disallowed single key is used without modifiers."
+  },
+  "error_shortcut_forbidden_key": {
+    "message": "\"$1\" kann nicht als Kurzbefehl verwendet werden.",
+    "description": "Shown when a key is not allowed at all."
+  },
+  "info_shortcut_updated": {
+    "message": "„$1“ wurde auf $2 geändert.",
+    "description": "Wird angezeigt, nachdem ein Shortcut aktualisiert wurde. $1 ist die Aktion, $2 sind die neuen Tasten.",
+    "placeholders": {
+      "action": {
+        "content": "$1",
+        "example": "Nach oben scrollen"
+      },
+      "binding": {
+        "content": "$2",
+        "example": "Ctrl+K"
+      }
+    }
+  },
+  "info_reset_success": {
+    "message": "Auf Standardeinstellungen zurückgesetzt.",
+    "description": "Bestätigung nach dem Zurücksetzen."
+  },
+  "toggle_vimScroll": {
+    "message": "Vim-ähnliches Scrollen",
+    "description": "Schalter für Vim-Scroll."
+  },
+  "toggle_wideScreen": {
+    "message": "Breitbild",
+    "description": "Schalter für Breitbildmodus."
+  },
+  "toggle_safeSend": {
+    "message": "Senden mit $1 + Enter",
+    "description": "Schalter für Senden mit Cmd/Ctrl+Enter."
+  },
+  "toggle_otherShortcuts": {
+    "message": "Weitere Shortcuts",
+    "description": "Schalter für weitere Shortcuts."
+  },
+  "shortcut_scrollTop": {
+    "message": "Zum Seitenanfang scrollen",
+    "description": "Shortcut-Name: nach oben springen."
+  },
+  "shortcut_scrollBottom": {
+    "message": "Zum Seitenende scrollen",
+    "description": "Shortcut-Name: nach unten springen."
+  },
+  "shortcut_scrollUp": {
+    "message": "Nach oben scrollen",
+    "description": "Shortcut-Name: nach oben scrollen."
+  },
+  "shortcut_scrollDown": {
+    "message": "Nach unten scrollen",
+    "description": "Shortcut-Name: nach unten scrollen."
+  },
+  "shortcut_scrollHalfUp": {
+    "message": "Eine halbe Seite nach oben scrollen",
+    "description": "Shortcut-Name: halbe Seite hoch."
+  },
+  "shortcut_scrollHalfDown": {
+    "message": "Eine halbe Seite nach unten scrollen",
+    "description": "Shortcut-Name: halbe Seite runter."
+  },
+  "shortcut_toggleFocus": {
+    "message": "Fokus umschalten",
+    "description": "Shortcut-Name: Fokus umschalten."
+  },
+  "shortcut_toggleHeader": {
+    "message": "Kopfzeile umschalten",
+    "description": "Shortcut-Name: Kopfzeile zeigen/verbergen."
+  },
+  "shortcut_addSources": {
+    "message": "Quellen hinzufügen",
+    "description": "Shortcut-Name: Quellen hinzufügen öffnen."
+  },
+  "shortcut_deleteChat": {
+    "message": "Chat-Verlauf löschen",
+    "description": "Shortcut-Name: Chat-Verlauf löschen."
+  },
+  "shortcut_toggleRightSidebar": {
+    "message": "Rechte Seitenleiste umschalten / Tab nach rechts bewegen",
+    "description": "Shortcut-Name: rechte Seitenleiste oder Tab nach rechts."
+  },
+  "shortcut_toggleLeftSidebar": {
+    "message": "Linke Seitenleiste umschalten / Tab nach links bewegen",
+    "description": "Shortcut-Name: linke Seitenleiste oder Tab nach links."
+  },
+  "modal_title_shortcuts": {
+    "message": "NotebookLM Tastenkürzel",
+    "description": "Titel des Shortcut-Modals."
+  },
+  "modal_section_common": {
+    "message": "Allgemeine Shortcuts",
+    "description": "Überschrift der allgemeinen Shortcuts."
+  },
+  "modal_section_large": {
+    "message": "Shortcuts für große Bildschirme",
+    "description": "Überschrift der großen Bildschirmsektion."
+  },
+  "modal_section_small": {
+    "message": "Shortcuts für kleine Bildschirme",
+    "description": "Überschrift der kleinen Bildschirmsektion."
+  },
+  "modal_column_action": {
+    "message": "Aktion",
+    "description": "Spaltenkopf Aktion."
+  },
+  "modal_column_shortcut": {
+    "message": "Shortcut",
+    "description": "Spaltenkopf Shortcut."
+  },
+  "modal_settings_row_label": {
+    "message": "Shortcut konfigurieren",
+    "description": "Zeile, die zu den Erweiterungseinstellungen führt."
+  },
+  "modal_settings_row_link": {
+    "message": "Hier klicken",
+    "description": "Linktext zu den Einstellungen."
+  },
+  "modal_action_keyboard_shortcuts": {
+    "message": "Tastenkürzel",
+    "description": "Beschriftung der Hilfszeile."
+  },
+  "modal_action_toggle_right_sidebar": {
+    "message": "Rechte Seitenleiste umschalten",
+    "description": "Beschriftung zum Umschalten der rechten Seitenleiste."
+  },
+  "modal_action_toggle_left_sidebar": {
+    "message": "Linke Seitenleiste umschalten",
+    "description": "Beschriftung zum Umschalten der linken Seitenleiste."
+  },
+  "modal_action_move_right_tab": {
+    "message": "Tab nach rechts bewegen",
+    "description": "Beschriftung zum Verschieben des Tabs nach rechts auf kleinen Bildschirmen."
+  },
+  "modal_action_move_left_tab": {
+    "message": "Tab nach links bewegen",
+    "description": "Beschriftung zum Verschieben des Tabs nach links auf kleinen Bildschirmen."
+  },
+  "modal_action_delete_chat_history": {
+    "message": "Chat-Verlauf löschen",
+    "description": "Beschriftung zum Löschen des Chat-Verlaufs."
+  },
+  "aria_close": {
+    "message": "Schließen",
+    "description": "aria-label für Schließen-Schaltflächen."
+  },
+  "app_name_full": {
+    "message": "NotebookLM Shortcut Effective Extension",
+    "description": "Name der Erweiterung. Marke bleibt Englisch."
+  },
+  "app_name_short": {
+    "message": "NotebookLM Shortcut Extension",
+    "description": "Short app name shown where space is limited."
+  },
+  "app_description": {
+    "message": "Sichereres Senden, Vim-ähnliches Scrollen, Modellumschaltung, temporäre Chats und eine aufgeräumte Oberfläche für NotebookLM.",
+    "description": "Kurze Beschreibung der Erweiterung."
+  }
+}
