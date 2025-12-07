@@ -1,0 +1,526 @@
+/* ============================================================================
+   NotebookLM Shortcut Extension - Styles
+   Combines: wide_screen omnibar toggle, UI cleanup, and shortcut modal
+   ============================================================================ */
+
+/* ============================================================================
+   Section 1: Omnibar Toggle Styles
+   From: wide_screen/style.css (lines 1-22)
+   ============================================================================ */
+
+/*
+   Note: We use !important to ensure these styles override inline styles
+   or framework-specific styles if necessary.
+*/
+
+body.nbc-wide-screen-enabled omnibar {
+  /* Add smooth transition for opacity */
+  transition: opacity 0.12s ease !important;
+}
+
+/* Hidden state - keyboard events still work (no pointer-events: none) */
+body.nbc-wide-screen-enabled omnibar.omnibar-ext-hidden {
+  opacity: 0 !important;
+}
+
+/* Visible state (default, but explicit if needed) */
+body.nbc-wide-screen-enabled omnibar:not(.omnibar-ext-hidden) {
+  opacity: 1 !important;
+  pointer-events: auto;
+}
+
+/* ============================================================================
+   Section 2: UI Cleanup Styles (MODIFIED)
+   From: wide_screen/style.css (lines 24-238)
+   MODIFICATIONS: Lines 37-39 and 57-59 changed to font-size: 0 instead of display: none
+   ============================================================================ */
+
+/* For clean screen */
+/* Hide the mat-button-toggle elements */
+body.nbc-wide-screen-enabled mat-button-toggle.project-section-toggle-option[role='presentation'] {
+  display: none !important;
+}
+
+body.nbc-wide-screen-enabled div.featured-projects-container {
+  display: none !important;
+}
+
+body.nbc-wide-screen-enabled pro-badge {
+  display: none !important;
+}
+
+/* MODIFIED: Use font-size: 0 to keep buttons clickable */
+body.nbc-wide-screen-enabled title-bar-settings .settings-button .extendable-label > span[label] {
+  font-size: 0 !important;
+}
+
+body.nbc-wide-screen-enabled mat-icon.button-icon.google-symbols.mat-icon-no-color {
+  margin: 0 !important;
+}
+
+body.nbc-wide-screen-enabled div.project-filter-create-container {
+  display: none !important;
+}
+
+body.nbc-wide-screen-enabled div.projects-header.mat-headline-small {
+  opacity: 0 !important;
+}
+
+body.nbc-wide-screen-enabled footer.footer.mat-body-small {
+  font-size: 0 !important;
+  height: 10px !important;
+}
+
+body.nbc-wide-screen-enabled .panel-header-content,
+body.nbc-wide-screen-enabled .title-and-promo {
+  opacity: 0 !important;
+}
+
+/* MODIFIED: Use font-size: 0 to keep buttons clickable */
+body.nbc-wide-screen-enabled div.non-cta-buttons-container .extendable-label > span[label] {
+  font-size: 0 !important;
+}
+
+body.nbc-wide-screen-enabled .source-discovery-promo-container {
+  display: none !important;
+}
+
+/* MODIFIED: Use font-size: 0 to keep "Add source" button clickable */
+body.nbc-wide-screen-enabled button.add-source-button > span:nth-of-type(2) {
+  font-size: 0 !important;
+}
+
+/* 1. Make chat panel container full-screen based */
+body.nbc-wide-screen-enabled section.chat-panel {
+  position: relative; /* Reference point for absolute positioning of children */
+  height: 100% !important; /* Expand to fill the section */
+  overflow: hidden;
+}
+
+/* 2. Header (panel-header equivalent) settings */
+/* Make background transparent, remove borders, overlay display */
+body.nbc-wide-screen-enabled section.chat-panel > div:first-child {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important; /* Also remove shadows */
+
+  /* Overlay on top of chat area */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Display in front of chat */
+  pointer-events: none; /* Allow clicks on header padding to pass through to chat below */
+}
+
+/* 3. Button area settings */
+/* Right-aligned, vertical layout */
+body.nbc-wide-screen-enabled .chat-header-buttons {
+  display: flex;
+  /* column-reverse: vertical layout, bottom-to-top order (visually reversed) */
+  flex-direction: column-reverse !important;
+  align-items: flex-end; /* Right-aligned */
+  gap: 8px; /* Spacing between buttons */
+
+  /* Fixed to top-right with absolute positioning */
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  pointer-events: auto;
+}
+
+/* 4. Main chat screen settings */
+/* Extend to top, ignoring header space */
+body.nbc-wide-screen-enabled chat-panel {
+  height: 100% !important;
+  display: block;
+  padding-top: 0 !important; /* Adjust as needed */
+}
+
+/* (Optional) Hide or make transparent if top-left title (Chat) is in the way */
+body.nbc-wide-screen-enabled .title-and-promo {
+  opacity: 0.5; /* Fade out, or use display: none; to hide completely */
+  pointer-events: none;
+}
+
+body.nbc-wide-screen-enabled textarea#mat-input-0::placeholder {
+  color: transparent !important; /* Hide text by making it transparent */
+}
+
+/* Hide "Web" (left) and "Fast Research" (right) labels only */
+body.nbc-wide-screen-enabled .actions-options .corpus-select-label {
+  display: none !important;
+}
+
+body.nbc-wide-screen-enabled .chat-panel-start-note-buttons {
+  display: none !important;
+}
+
+/* Hide "Save to note" text only */
+body.nbc-wide-screen-enabled button.pin-button .mdc-button__label {
+  display: none !important;
+}
+
+/* Remove margin from keep_pin icon */
+body.nbc-wide-screen-enabled
+  button.pin-button
+  mat-icon.mat-icon.notranslate.google-symbols.mat-icon-no-color {
+  margin: 0 !important;
+}
+
+body.nbc-wide-screen-enabled .mat-mdc-button-touch-target {
+  display: none !important;
+}
+
+body.nbc-wide-screen-enabled chat-panel p,
+body.nbc-wide-screen-enabled chat-panel b,
+body.nbc-wide-screen-enabled chat-panel li,
+body.nbc-wide-screen-enabled chat-panel span,
+body.nbc-wide-screen-enabled chat-panel div,
+body.nbc-wide-screen-enabled chat-panel dd,
+body.nbc-wide-screen-enabled chat-panel dt {
+  font-size: 16px !important; /* Adjust to preferred size */
+  line-height: 1.6; /* Adjust to preference */
+}
+
+body.nbc-wide-screen-enabled omnibar follow-up {
+  display: none !important;
+}
+
+body.nbc-wide-screen-enabled .jump-to-bottom-button-container button {
+  display: none !important;
+}
+
+body.nbc-wide-screen-enabled chat-panel > .chat-panel-content > .chat-message-pair {
+  max-width: 768px;
+  margin: 0 auto; /* Center horizontally */
+  width: 100%; /* Use full parent width, but limit to 768px max */
+  box-sizing: border-box;
+}
+
+body.nbc-wide-screen-enabled chat-panel > omnibar {
+  margin: 0 auto; /* Center horizontally */
+  width: 100%; /* Use full parent width, but limit to 768px max */
+  box-sizing: border-box;
+}
+
+/* Parent element: anchor role */
+body.nbc-wide-screen-enabled chat-panel {
+  display: block !important;
+  position: relative !important;
+  height: 100% !important;
+  overflow: hidden !important; /* Prevent double scrolling */
+}
+
+/* Child element 1: Main content (scroll area) */
+body.nbc-wide-screen-enabled .chat-panel-content {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+
+  /* Key fix for scrollbar */
+  overflow-y: auto !important;
+  box-sizing: border-box !important;
+
+  /* Layer order */
+  z-index: 1 !important;
+
+  /* Remove large padding, keep only fine-tuning margins */
+  padding-bottom: 20px !important;
+}
+
+/* Child element 2: Input bar (fixed position) */
+body.nbc-wide-screen-enabled omnibar {
+  max-width: 768px;
+  position: absolute !important;
+  bottom: 10px !important;
+  width: 90% !important;
+  left: 50% !important;
+  margin: 0 auto;
+  transform: translateX(-50%) !important;
+
+  /* Display in front of content */
+  z-index: 10 !important;
+}
+
+body.nbc-wide-screen-enabled .omnibar-container {
+  margin: 0 !important;
+}
+
+body.nbc-wide-screen-enabled div[role='tab'] {
+  /* Specify height (from previous settings) */
+  height: 28px !important;
+  min-height: 28px !important;
+  padding: 0 !important;
+
+  /* Center alignment both horizontally and vertically */
+  display: flex !important;
+  align-items: center !important; /* Vertical centering */
+  justify-content: center !important; /* Horizontal centering */
+}
+
+/* Also remove extra margins from inner span for safety */
+body.nbc-wide-screen-enabled div[role='tab'] > span {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+body.nbc-wide-screen-enabled
+  .chat-panel-content
+  > .chat-message-pair:last-of-type
+  chat-message.individual-message:last-of-type
+  .to-user-container {
+  padding-bottom: 100px !important; /* Adjust this value to match omnibar height */
+  display: block !important;
+}
+
+/* ============================================================================
+   Section 3: Shortcut Modal Styles
+   From: shortcut/styles.css (all lines)
+   No modifications needed
+   ============================================================================ */
+
+.shortcuts-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.shortcuts-modal {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  max-height: 90vh;
+  width: 90%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.shortcuts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f8f9fa;
+}
+
+.shortcuts-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #202124;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.shortcuts-close {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #5f6368;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.shortcuts-close:hover {
+  background-color: #e8eaed;
+}
+
+.shortcuts-content {
+  padding: 24px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.shortcuts-section {
+  margin-bottom: 32px;
+}
+
+.shortcuts-section:last-child {
+  margin-bottom: 0;
+}
+
+.shortcuts-section h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #202124;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.shortcuts-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  table-layout: fixed;
+}
+
+.shortcuts-table thead {
+  background-color: #f8f9fa;
+}
+
+.shortcuts-table th {
+  text-align: left;
+  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #5f6368;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.shortcuts-table th:first-child,
+.shortcuts-table td:first-child {
+  width: 60%;
+}
+
+.shortcuts-table th:last-child,
+.shortcuts-table td:last-child {
+  width: 40%;
+}
+
+.shortcuts-table td {
+  padding: 12px 16px;
+  font-size: 18px;
+  color: #202124;
+  border-bottom: 1px solid #e8eaed;
+}
+
+.shortcuts-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.shortcuts-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.shortcut-key {
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Consolas', monospace;
+  font-weight: 500;
+  color: #1a73e8;
+  white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .shortcuts-modal {
+    width: 95%;
+    max-width: none;
+  }
+
+  .shortcuts-header {
+    padding: 16px 20px;
+  }
+
+  .shortcuts-header h2 {
+    font-size: 20px;
+  }
+
+  .shortcuts-content {
+    padding: 20px;
+  }
+
+  .shortcuts-section h3 {
+    font-size: 16px;
+  }
+
+  .shortcuts-table th,
+  .shortcuts-table td {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .shortcuts-modal {
+    background-color: #292a2d;
+  }
+
+  .shortcuts-header {
+    background-color: #202124;
+    border-bottom-color: #3c4043;
+  }
+
+  .shortcuts-header h2 {
+    color: #e8eaed;
+  }
+
+  .shortcuts-close {
+    color: #9aa0a6;
+  }
+
+  .shortcuts-close:hover {
+    background-color: #3c4043;
+  }
+
+  .shortcuts-section h3 {
+    color: #e8eaed;
+  }
+
+  .shortcuts-table thead {
+    background-color: #202124;
+  }
+
+  .shortcuts-table th {
+    color: #9aa0a6;
+    border-bottom-color: #3c4043;
+  }
+
+  .shortcuts-table td {
+    color: #e8eaed;
+    border-bottom-color: #3c4043;
+  }
+
+  .shortcuts-table tbody tr:hover {
+    background-color: #3c4043;
+  }
+
+  .shortcut-key {
+    color: #8ab4f8;
+  }
+}
