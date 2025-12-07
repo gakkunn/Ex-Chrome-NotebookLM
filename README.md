@@ -24,8 +24,8 @@ This is an open-source extension implemented based on Chrome Extension Manifest 
 
 | Screen | 
 | ----------------------------------------------- | 
-| ![screenshot-1](./docs/screenshot-1.png) | 
-| ![screenshot-2](./docs/screenshot-2.png) | 
+| ![screenshot-1](./docs/images/local/screenshot-1.png) | 
+| ![screenshot-2](./docs/images/local/screenshot-2.png) | 
 
 ---
 
