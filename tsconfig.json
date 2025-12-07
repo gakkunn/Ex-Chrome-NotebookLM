@@ -1,0 +1,13 @@
+{
+  "extends": "./config/tsconfig.app.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true
+  },
+  "include": ["src", "config", "vite.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}
