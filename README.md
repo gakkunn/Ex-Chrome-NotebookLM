@@ -2,6 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
+Chrome Web Store: [NotebookLM Shortcut Effective Extension](https://chromewebstore.google.com/detail/notebooklm-shortcut-effec/filooobdflnbfkmahmnlkcmhigninlnj?authuser=0&hl=en)
+
 ## Overview
 
 A Chrome extension that boosts NotebookLM input and navigation with shortcuts, prevents accidental sends, and adjusts the layout. You can toggle each feature and customize key bindings from the popup.
@@ -31,8 +33,7 @@ This is an open-source extension implemented based on Chrome Extension Manifest 
 
 ## Installation
 
-> ℹ️ **Not yet published to the Chrome Web Store.**  
-> You can use it via "Local Installation (Developer Mode)" below.
+Chrome Web Store: [NotebookLM Shortcut Effective Extension](https://chromewebstore.google.com/detail/notebooklm-shortcut-effec/filooobdflnbfkmahmnlkcmhigninlnj?authuser=0&hl=en)
 
 ### 1. Clone the repository
 
