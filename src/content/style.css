@@ -188,6 +188,20 @@ body.nbc-wide-screen-enabled omnibar follow-up {
   display: none !important;
 }
 
+body.nbc-wide-screen-enabled .suggestions-container {
+  display: none !important;
+}
+
+/* Hide "Create notebook" text only */
+body.nbc-wide-screen-enabled button.create-notebook-button .mdc-button__label > span {
+  font-size: 0 !important;
+}
+
+/* Remove margin from add icon */
+body.nbc-wide-screen-enabled button.create-notebook-button mat-icon.google-symbols.mat-icon-no-color {
+  margin: 0 !important;
+}
+
 body.nbc-wide-screen-enabled .jump-to-bottom-button-container button {
   display: none !important;
 }
