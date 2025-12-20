@@ -108,10 +108,10 @@ export class DeleteChatHistory implements Feature {
   };
 
   init(): void {
-    document.addEventListener('keydown', this.onKeydown, { capture: true, passive: false });
+    window.addEventListener('keydown', this.onKeydown, { capture: true, passive: false });
   }
 
   destroy(): void {
-    document.removeEventListener('keydown', this.onKeydown, true);
+    window.removeEventListener('keydown', this.onKeydown, true);
   }
 }
