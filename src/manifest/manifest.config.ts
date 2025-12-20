@@ -7,7 +7,7 @@ export default defineManifest({
   name: '__MSG_app_name_full__',
   short_name: '__MSG_app_name_short__',
   description: '__MSG_app_description__',
-  version: '1.0.0',
+  version: '1.1.0',
   default_locale: 'en',
   permissions: ['storage'],
   action: {
