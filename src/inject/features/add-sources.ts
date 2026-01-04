@@ -5,7 +5,7 @@ import { DEFAULT_SETTINGS, type SettingsData } from '@/shared/settings';
 
 /**
  * AddSources - Open "Add Sources" dialog with keyboard shortcut
- * - Cmd+U (Mac) / Ctrl+U (Windows): open add sources dialog
+ * - Cmd+U (Mac) / Ctrl+Shift+U (Windows): open add sources dialog
  * - Wide screen: click add source button directly
  * - Small screen: switch to Sources tab, then click button
  */

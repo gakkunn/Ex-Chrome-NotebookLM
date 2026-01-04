@@ -32,7 +32,8 @@ type MessageState = {
 } | null;
 
 const GITHUB_URL = 'https://github.com/gakkunn/Ex-Chrome-NotebookLM';
-const SUPPORT_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSc9gdX8Xe9fkCyVL1Bd9Tguvh8-6JCdSYJyxf3BhkLK7sduZA/viewform';
+const SUPPORT_FORM_URL =
+  'https://docs.google.com/forms/d/e/1FAIpQLSc9gdX8Xe9fkCyVL1Bd9Tguvh8-6JCdSYJyxf3BhkLK7sduZA/viewform';
 const COFFEE_URL = 'https://buymeacoffee.com/gakkunn';
 
 const ICON_GITHUB_SRC = '/img/github.svg';

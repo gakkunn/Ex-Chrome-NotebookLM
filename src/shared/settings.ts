@@ -1,5 +1,6 @@
 import { DEFAULT_FEATURE_TOGGLES } from '@/shared/feature-flags';
 import type { FeatureToggleKey } from '@/shared/feature-flags';
+import { isMac } from '@/shared/keyboard';
 
 export interface KeyBinding {
   key: string;
@@ -36,6 +37,22 @@ export interface ShortcutDefinition {
 export interface SettingsData {
   featureToggles: Record<FeatureToggleKey, boolean>;
   shortcuts: Record<ShortcutId, KeyBinding[]>;
+}
+
+const ADD_SOURCES_DEFAULT_BINDINGS: KeyBinding[] = isMac()
+  ? [{ key: 'u', code: 'KeyU', mod: true }]
+  : [{ key: 'u', code: 'KeyU', mod: true, shift: true }];
+
+function isLegacyAddSourcesBinding(bindings: KeyBinding[] | undefined | null): boolean {
+  if (!Array.isArray(bindings) || bindings.length !== 1) return false;
+  const binding = bindings[0];
+  if (!binding) return false;
+  const key = (binding.key ?? '').toLowerCase();
+  if (key !== 'u') return false;
+  if (binding.code && binding.code !== 'KeyU') return false;
+  if (!binding.mod) return false;
+  if (binding.shift || binding.alt || binding.meta || binding.ctrl) return false;
+  return true;
 }
 
 /** Input type for mergeSettings - allows partial nested values */
@@ -111,7 +128,7 @@ export const SHORTCUT_DEFINITIONS: ShortcutDefinition[] = [
     label: 'Add Sources',
     labelKey: 'shortcut_addSources',
     category: 'otherShortcuts',
-    defaultBindings: [{ key: 'u', code: 'KeyU', mod: true }],
+    defaultBindings: ADD_SOURCES_DEFAULT_BINDINGS,
   },
   {
     id: 'deleteChat',
@@ -162,6 +179,10 @@ export function mergeSettings(partial: PartialSettingsInput | undefined | null):
       // Reset to default if empty array
       shortcuts[shortcutId] = bindings.length ? bindings : DEFAULT_SHORTCUTS[shortcutId];
     }
+  }
+
+  if (!isMac() && isLegacyAddSourcesBinding(shortcuts.addSources)) {
+    shortcuts.addSources = ADD_SOURCES_DEFAULT_BINDINGS;
   }
 
   return { featureToggles, shortcuts };

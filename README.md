@@ -66,7 +66,7 @@ npm run build          # During development, run npm run dev for watch builds
    - Shift + Space toggles omnibar focus/visibility (when the wide screen toggle is enabled)
    - Cmd/Ctrl + Enter sends; Enter inserts a newline only (Safe Send)
    - j / k / Shift+j / Shift+k / Cmd/Ctrl + j/k for scrolling (Vim-like Scroll)
-   - Cmd/Ctrl + U opens the Add Sources dialog; Cmd/Ctrl + Shift + Delete clears chat history (wide view)
+   - Cmd + U (Mac) / Ctrl + Shift + U (Windows) opens the Add Sources dialog; Cmd/Ctrl + Shift + Delete clears chat history (wide view)
    - Cmd/Ctrl + , / . toggles sidebars; on small screens it switches tabs
    - Cmd/Ctrl + / opens the shortcut list modal
 3. Click the toolbar icon to open the popup, toggle features, or edit shortcuts. Settings are saved to Chrome storage and applied immediately to the NotebookLM page. Use **Reset** to restore the defaults.
@@ -154,4 +154,3 @@ This extension does not collect personally identifiable information and does not
 ## License
 
 This project is released under the [MIT License](./LICENSE).
-

@@ -6,6 +6,10 @@ import type { KeyBinding } from '@/shared/settings';
 export const MIN_WIDE_WIDTH = 1051;
 export const SCROLLING_SPEED = 20;
 
+const ADD_SOURCES_BINDINGS: KeyBinding[] = isMacPlatform()
+  ? [{ key: 'u', code: 'KeyU', mod: true }]
+  : [{ key: 'u', code: 'KeyU', mod: true, shift: true }];
+
 function formatShortcut(bindings: KeyBinding[]): string {
   return bindingsToDisplayText(bindings, { tokenSeparator: ' ' });
 }
@@ -38,7 +42,7 @@ export const COMMON_SHORTCUTS: ShortcutItem[] = [
     item: 'Toggle Header',
     shortcut: formatShortcut([{ key: 'S', code: 'KeyS', mod: true, shift: true }]),
   },
-  { item: 'Add Sources', shortcut: formatShortcut([{ key: 'u', code: 'KeyU', mod: true }]) },
+  { item: 'Add Sources', shortcut: formatShortcut(ADD_SOURCES_BINDINGS) },
 ];
 
 export const LARGE_SCREEN_SHORTCUTS: ShortcutItem[] = [
