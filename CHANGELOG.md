@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1 - 2026-01-04
+
+### Bug Fixes
+- Fix Add Sources shortcut on Windows (Ctrl+Shift+U)
+
 ## 1.1.0 - 2025-12-20
 
 ### Features
