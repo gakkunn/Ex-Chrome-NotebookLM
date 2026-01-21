@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.0 - 2026-01-21
+
+### Features
+- Add review callout in popup footer
+- Add review prompt translations
+
+### Documentation
+- Add popup layout design notes
+- Add review footer reproduction guide
+
 ## 1.1.1 - 2026-01-04
 
 ### Bug Fixes
@@ -19,4 +29,3 @@
 
 ## 1.0.0 - 2025-12-07
 - Initial release
-
