@@ -35,10 +35,13 @@ const GITHUB_URL = 'https://github.com/gakkunn/Ex-Chrome-NotebookLM';
 const SUPPORT_FORM_URL =
   'https://docs.google.com/forms/d/e/1FAIpQLSc9gdX8Xe9fkCyVL1Bd9Tguvh8-6JCdSYJyxf3BhkLK7sduZA/viewform';
 const COFFEE_URL = 'https://buymeacoffee.com/gakkunn';
+const REVIEW_URL =
+  'https://chromewebstore.google.com/detail/notebooklm-shortcut-effec/filooobdflnbfkmahmnlkcmhigninlnj/reviews?hl=en&authuser=0';
 
 const ICON_GITHUB_SRC = '/img/github.svg';
 const ICON_SUPPORT_SRC = '/img/support.svg';
 const ICON_COFFEE_SRC = '/img/coffee.svg';
+const ICON_REVIEW_SRC = '/img/review.svg';
 
 const modifierKeys = new Set(['Shift', 'Control', 'Alt', 'Meta']);
 
@@ -370,6 +373,64 @@ export function App(): JSX.Element {
         </button>
       </header>
 
+      <footer className="popup-footer">
+        <p className="footer-message">{t('popup_footer_review_prompt')}</p>
+        <section className="links">
+          <div>
+            <a
+              className="footer-button github-button"
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Contribute"
+            >
+              <span>
+                <img className="icon" src={ICON_GITHUB_SRC} alt="Contribute" />
+              </span>
+            </a>
+          </div>
+          <div>
+            <a
+              className="footer-button question-button"
+              href={SUPPORT_FORM_URL}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Support"
+            >
+              <span>
+                <img className="icon" src={ICON_SUPPORT_SRC} alt="Report a problem" />
+              </span>
+            </a>
+          </div>
+          <div>
+            <a
+              className="footer-button review-button"
+              href={REVIEW_URL}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Review"
+            >
+              <span>
+                <img className="icon" src={ICON_REVIEW_SRC} alt="Review" />
+              </span>
+            </a>
+          </div>
+          <div>
+            <a
+              className="footer-button coffee-button"
+              href={COFFEE_URL}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Buy me a coffee"
+            >
+              <span>
+                <img className="icon" src={ICON_COFFEE_SRC} alt="Buy me a coffee" />
+              </span>
+            </a>
+          </div>
+        </section>
+      </footer>
+
       {!settings && (
         <section className="card">
           <p className="status-text">
@@ -467,50 +528,6 @@ export function App(): JSX.Element {
           </section>
         </>
       )}
-
-      <footer className="popup-footer">
-        <section className="links">
-          <div>
-            <a
-              className="footer-button github-button"
-              href={GITHUB_URL}
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label="Contribute"
-            >
-              <span>
-                <img className="icon" src={ICON_GITHUB_SRC} alt="Contribute" />
-              </span>
-            </a>
-          </div>
-          <div>
-            <a
-              className="footer-button question-button"
-              href={SUPPORT_FORM_URL}
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label="Support"
-            >
-              <span>
-                <img className="icon" src={ICON_SUPPORT_SRC} alt="Report a problem" />
-              </span>
-            </a>
-          </div>
-          <div>
-            <a
-              className="footer-button coffee-button"
-              href={COFFEE_URL}
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label="Buy me a coffee"
-            >
-              <span>
-                <img className="icon" src={ICON_COFFEE_SRC} alt="Buy me a coffee" />
-              </span>
-            </a>
-          </div>
-        </section>
-      </footer>
     </div>
   );
 }
