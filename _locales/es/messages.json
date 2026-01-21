@@ -31,6 +31,10 @@
     "message": "Cargando la configuración...",
     "description": "Estado mientras se cargan las opciones."
   },
+  "popup_footer_review_prompt": {
+    "message": "Incluso un comentario breve me alegraría de corazón.",
+    "description": "Mensaje mostrado sobre los enlaces del pie para animar a dejar reseñas."
+  },
   "status_enable_shortcuts": {
     "message": "Activa las funciones para usar los atajos.",
     "description": "Mensaje cuando no hay atajos porque las funciones están desactivadas."

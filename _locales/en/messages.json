@@ -31,6 +31,10 @@
     "message": "Loading settings...",
     "description": "Status text shown while settings are being loaded."
   },
+  "popup_footer_review_prompt": {
+    "message": "Even a short comment would truly make me happy",
+    "description": "Message shown above the footer links encouraging reviews."
+  },
   "status_enable_shortcuts": {
     "message": "Enable features to use shortcuts.",
     "description": "Empty state message shown when no shortcuts are available because toggles are off."

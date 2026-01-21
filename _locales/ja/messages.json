@@ -31,6 +31,10 @@
     "message": "設定を読み込み中です...",
     "description": "設定読み込み中のステータス。"
   },
+  "popup_footer_review_prompt": {
+    "message": "短いコメントでもくれると心の底から喜びます。",
+    "description": "フッターのリンクの上に表示されるレビュー促進メッセージ。"
+  },
   "status_enable_shortcuts": {
     "message": "ショートカットを使うには機能を有効にしてください。",
     "description": "機能がオフでショートカットが空のときの案内。"

@@ -31,6 +31,10 @@
     "message": "正在載入設定...",
     "description": "載入設定時的狀態文字。"
   },
+  "popup_footer_review_prompt": {
+    "message": "哪怕只留下一句簡短的評論也會讓我由衷地開心。",
+    "description": "顯示在頁尾連結上方、用來鼓勵評價的訊息。"
+  },
   "status_enable_shortcuts": {
     "message": "啟用功能後即可使用快捷鍵。",
     "description": "功能關閉導致沒有快捷鍵時的提示。"

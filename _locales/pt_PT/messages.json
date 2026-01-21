@@ -31,6 +31,10 @@
     "message": "A carregar definições...",
     "description": "Estado enquanto carrega as definições."
   },
+  "popup_footer_review_prompt": {
+    "message": "Mesmo um comentário curto me alegraria do fundo do coração.",
+    "description": "Mensagem apresentada acima das ligações do rodapé a incentivar avaliações."
+  },
   "status_enable_shortcuts": {
     "message": "Ative as funcionalidades para usar os atalhos.",
     "description": "Mensagem quando não há atalhos porque as funcionalidades estão desligadas."

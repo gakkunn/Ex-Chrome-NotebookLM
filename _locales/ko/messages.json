@@ -31,6 +31,10 @@
     "message": "설정을 불러오는 중입니다...",
     "description": "설정 로딩 상태."
   },
+  "popup_footer_review_prompt": {
+    "message": "짧은 코멘트만 남겨도 마음 깊이 기쁩니다.",
+    "description": "푸터 링크 위에 표시되는 리뷰 유도 메시지."
+  },
   "status_enable_shortcuts": {
     "message": "단축키를 사용하려면 기능을 활성화하세요.",
     "description": "기능이 꺼져 있을 때의 안내."

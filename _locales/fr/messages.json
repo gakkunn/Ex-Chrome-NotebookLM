@@ -31,6 +31,10 @@
     "message": "Chargement des paramètres...",
     "description": "Statut pendant le chargement des paramètres."
   },
+  "popup_footer_review_prompt": {
+    "message": "Même un bref commentaire me ferait chaud au cœur.",
+    "description": "Message affiché au-dessus des liens du pied de page pour encourager les avis."
+  },
   "status_enable_shortcuts": {
     "message": "Activez les fonctionnalités pour utiliser les raccourcis.",
     "description": "Message quand il n’y a pas de raccourcis car les fonctionnalités sont désactivées."

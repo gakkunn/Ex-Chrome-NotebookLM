@@ -31,6 +31,10 @@
     "message": "Carregando configurações...",
     "description": "Estado ao carregar as configurações."
   },
+  "popup_footer_review_prompt": {
+    "message": "Mesmo um comentário curto me alegraria de coração.",
+    "description": "Mensagem exibida acima dos links do rodapé incentivando avaliações."
+  },
   "status_enable_shortcuts": {
     "message": "Ative os recursos para usar os atalhos.",
     "description": "Mensagem quando não há atalhos porque os recursos estão desligados."

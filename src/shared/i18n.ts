@@ -8,6 +8,10 @@ function applySubstitutions(template: string, substitutions?: string | string[])
   });
 }
 
+const FALLBACK_MESSAGES: Record<string, string> = {
+  popup_footer_review_prompt: 'Even a short comment would truly make me happy',
+};
+
 export function t(key: string, substitutions?: string | string[], fallback?: string): string {
   try {
     if (typeof chrome !== 'undefined' && chrome?.i18n?.getMessage) {
@@ -19,6 +23,6 @@ export function t(key: string, substitutions?: string | string[], fallback?: str
     console.warn('[NotebookLM Shortcut Extension] i18n lookup failed for key:', key, error);
   }
 
-  const fallbackBase = fallback ?? key;
+  const fallbackBase = fallback ?? FALLBACK_MESSAGES[key] ?? key;
   return applySubstitutions(fallbackBase, substitutions);
 }

@@ -31,6 +31,10 @@
     "message": "Einstellungen werden geladen...",
     "description": "Status beim Laden der Einstellungen."
   },
+  "popup_footer_review_prompt": {
+    "message": "Schon ein kurzer Kommentar würde mich von Herzen freuen.",
+    "description": "Text über den Footer-Links, der zu Bewertungen ermutigt."
+  },
   "status_enable_shortcuts": {
     "message": "Aktivieren Sie Funktionen, um Shortcuts zu nutzen.",
     "description": "Hinweis, wenn keine Shortcuts verfügbar sind, weil Funktionen aus sind."

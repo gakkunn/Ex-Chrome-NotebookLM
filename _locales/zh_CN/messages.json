@@ -31,6 +31,10 @@
     "message": "正在加载设置...",
     "description": "加载设置时的状态文本。"
   },
+  "popup_footer_review_prompt": {
+    "message": "哪怕只留一句简短的评论也会让我由衷地开心。",
+    "description": "显示在页脚链接上方的评价提示语。"
+  },
   "status_enable_shortcuts": {
     "message": "启用相关功能后即可使用快捷键。",
     "description": "功能关闭导致没有快捷键时的提示。"
